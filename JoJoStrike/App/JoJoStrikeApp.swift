@@ -7,9 +7,15 @@ struct JoJoStrikeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
-                .environment(appState)
-                .preferredColorScheme(.dark)
+            Group {
+                if appState.hasCompletedOnboarding {
+                    MainTabView()
+                } else {
+                    OnboardingView()
+                }
+            }
+            .environment(appState)
+            .preferredColorScheme(.dark)
         }
         .modelContainer(for: [
             UserProfile.self,
