@@ -1,0 +1,30 @@
+# Xcode
+*.xcodeproj/
+xcuserdata/
+*.xcworkspace/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# OS
+.DS_Store
+*.swp
+*~
+
+# ML training data (large files)
+JoJoStrike/ML/PoseData/*.jpg
+JoJoStrike/ML/PoseData/*.png
+JoJoStrike/ML/PoseData/*.json
+JoJoStrike/ML/*.mlmodel
