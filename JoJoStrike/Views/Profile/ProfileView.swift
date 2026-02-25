@@ -21,7 +21,7 @@ struct ProfileView: View {
                     .padding()
                 }
             }
-            .navigationTitle("Profile")
+            .navigationTitle("Perfil")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .onAppear { vm.ensureProfile(in: modelContext) }
@@ -79,7 +79,7 @@ struct ProfileView: View {
             HStack {
                 Image(systemName: "calendar.badge.clock")
                     .foregroundStyle(.jojoOrange)
-                Text("Daily Challenge")
+                Text("Desafío Diario")
                     .font(.headline.bold())
                     .foregroundStyle(.white)
                 Spacer()
@@ -110,7 +110,7 @@ struct ProfileView: View {
                 HStack {
                     Image(systemName: "flame.fill")
                         .foregroundStyle(.jojoOrange)
-                    Text("\(vm.currentStreak) day streak!")
+                    Text("\(vm.currentStreak) días de racha!")
                         .font(.caption.bold())
                         .foregroundStyle(.jojoOrange)
                     Spacer()
@@ -131,9 +131,9 @@ struct ProfileView: View {
     private var quickStats: some View {
         HStack(spacing: 12) {
             quickStat(value: "\(vm.totalPosesCompleted)", label: "Poses", icon: "figure.stand", color: .jojoPurple)
-            quickStat(value: "\(vm.totalAttempts)", label: "Attempts", icon: "arrow.counterclockwise", color: .jojoBlue)
-            quickStat(value: "\(vm.bestScore)%", label: "Best", icon: "star.fill", color: .jojoGold)
-            quickStat(value: "\(vm.achievementProgress.unlocked)", label: "Achievements", icon: "trophy.fill", color: .jojoOrange)
+            quickStat(value: "\(vm.totalAttempts)", label: "Intentos", icon: "arrow.counterclockwise", color: .jojoBlue)
+            quickStat(value: "\(vm.bestScore)%", label: "Mejor", icon: "star.fill", color: .jojoGold)
+            quickStat(value: "\(vm.achievementProgress.unlocked)", label: "Logros", icon: "trophy.fill", color: .jojoOrange)
         }
     }
 
@@ -165,13 +165,13 @@ struct ProfileView: View {
                     unlockedIDs: Set(vm.profile?.unlockedPoseIDs ?? [])
                 )
             } label: {
-                navRow("Achievements", icon: "trophy.fill", detail: "\(vm.achievementProgress.unlocked)/\(vm.achievementProgress.total)")
+                navRow("Logros", icon: "trophy.fill", detail: "\(vm.achievementProgress.unlocked)/\(vm.achievementProgress.total)")
             }
 
             NavigationLink {
                 StatsView(vm: vm)
             } label: {
-                navRow("Statistics", icon: "chart.bar.fill", detail: nil)
+                navRow("Estadísticas", icon: "chart.bar.fill", detail: nil)
             }
         }
     }

@@ -41,7 +41,7 @@ struct SwipeGestureModifier: ViewModifier {
         if abs(offset.width) > 30 {
             Group {
                 if isRightSwipe {
-                    Label("TRY", systemImage: "star.fill")
+                    Label("¡SÍ!", systemImage: "star.fill")
                         .font(.system(size: 20, weight: .black))
                         .foregroundStyle(.jojoGold)
                         .padding(12)
@@ -52,7 +52,7 @@ struct SwipeGestureModifier: ViewModifier {
                                 .strokeBorder(.jojoGold, lineWidth: 2)
                         }
                 } else {
-                    Label("SKIP", systemImage: "xmark")
+                    Label("PASO", systemImage: "xmark")
                         .font(.system(size: 20, weight: .black))
                         .foregroundStyle(.gray)
                         .padding(12)

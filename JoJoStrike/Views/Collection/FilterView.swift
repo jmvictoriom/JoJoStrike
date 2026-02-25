@@ -23,7 +23,7 @@ struct FilterView: View {
                         }
                     }
                 } label: {
-                    filterChip("Sort: \(sortBy.rawValue)", icon: "arrow.up.arrow.down", active: true)
+                    filterChip("Orden: \(sortBy.rawValue)", icon: "arrow.up.arrow.down", active: true)
                 }
 
                 // Rarity filter

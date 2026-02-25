@@ -41,7 +41,7 @@ struct CardDetailView: View {
             // Best score
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Best Score")
+                    Text("Mejor Puntuación")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     Text("\(bestScore)%")
@@ -52,7 +52,7 @@ struct CardDetailView: View {
                 Spacer()
 
                 VStack(alignment: .trailing) {
-                    Text("Medal")
+                    Text("Medalla")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     HStack {
@@ -69,14 +69,14 @@ struct CardDetailView: View {
 
             // Stats
             HStack(spacing: 20) {
-                statItem(label: "Difficulty", value: "\(card.difficulty)/5", icon: "flame.fill", color: .orange)
-                statItem(label: "Rarity", value: card.rarity.displayName, icon: "sparkles", color: card.rarity.color)
-                statItem(label: "Category", value: card.category.displayName, icon: "tag.fill", color: .jojoPurple)
+                statItem(label: "Dificultad", value: "\(card.difficulty)/5", icon: "flame.fill", color: .orange)
+                statItem(label: "Rareza", value: card.rarity.displayName, icon: "sparkles", color: card.rarity.color)
+                statItem(label: "Categoría", value: card.category.displayName, icon: "tag.fill", color: .jojoPurple)
             }
 
             // Character info
             VStack(alignment: .leading, spacing: 8) {
-                Text("Character")
+                Text("Personaje")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Text(card.character)
@@ -105,11 +105,11 @@ struct CardDetailView: View {
                 .font(.system(size: 40))
                 .foregroundStyle(.gray)
 
-            Text("Card Locked")
+            Text("Carta Bloqueada")
                 .font(.title2.bold())
                 .foregroundStyle(.gray)
 
-            Text("Complete this pose to unlock the card")
+            Text("Completa esta pose para desbloquear la carta")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)

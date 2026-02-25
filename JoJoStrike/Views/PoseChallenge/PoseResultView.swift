@@ -62,7 +62,7 @@ struct PoseResultView: View {
                 // Actions
                 VStack(spacing: 12) {
                     Button(action: onDismiss) {
-                        Text("CONTINUE")
+                        Text("CONTINUAR")
                             .font(.headline.bold())
                             .tracking(2)
                             .foregroundStyle(.jojoDarkBg)

@@ -64,7 +64,7 @@ struct PoseChallengeView: View {
                 .contentTransition(.numericText())
                 .animation(.spring, value: vm.countdown)
 
-            Text("Get ready!")
+            Text("¡Prepárate!")
                 .font(.title3)
                 .foregroundStyle(.secondary)
 
@@ -115,7 +115,7 @@ struct PoseChallengeView: View {
                 // Score bar
                 VStack(spacing: 8) {
                     HStack {
-                        Text("Match")
+                        Text("Similitud")
                             .font(.caption.bold())
                             .foregroundStyle(.white)
 
@@ -139,7 +139,7 @@ struct PoseChallengeView: View {
                     .frame(height: 8)
 
                     HStack {
-                        Text("Best: \(vm.bestScore)%")
+                        Text("Mejor: \(vm.bestScore)%")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                         Spacer()
@@ -167,7 +167,7 @@ struct PoseChallengeView: View {
 
     private var closeButton: some View {
         Button { dismiss() } label: {
-            Text("Cancel")
+            Text("Cancelar")
                 .foregroundStyle(.secondary)
         }
         .padding(.bottom)

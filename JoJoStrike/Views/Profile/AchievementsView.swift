@@ -20,7 +20,7 @@ struct AchievementsView: View {
             .padding()
         }
         .background(Color.jojoDarkBg)
-        .navigationTitle("Achievements")
+        .navigationTitle("Logros")
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(.dark, for: .navigationBar)
     }

@@ -58,10 +58,14 @@ struct PoseCardView: View {
                 endPoint: .bottom
             )
 
-            // Pose silhouette placeholder
-            Image(systemName: "figure.stand")
-                .font(.system(size: 100))
-                .foregroundStyle(card.rarity.color.opacity(0.3))
+            // Pose silhouette figure
+            PoseSilhouetteView(
+                poseID: card.id,
+                color: card.rarity.color,
+                lineWidth: 4,
+                showGlow: card.rarity.hasGlowBorder
+            )
+            .padding(20)
 
             // Category badge
             VStack {
@@ -127,7 +131,7 @@ struct PoseCardView: View {
 
             if let action = onTryPose {
                 Button(action: action) {
-                    Label("TRY POSE", systemImage: "bolt.fill")
+                    Label("INTENTAR POSE", systemImage: "bolt.fill")
                         .font(.system(size: 14, weight: .black))
                         .tracking(1)
                         .foregroundStyle(Color.jojoDarkBg)

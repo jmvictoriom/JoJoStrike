@@ -7,15 +7,15 @@ struct StatsView: View {
         ScrollView {
             VStack(spacing: 20) {
                 // Overview
-                statsSection("Overview") {
-                    statRow("Total Attempts", value: "\(vm.totalAttempts)")
-                    statRow("Poses Completed", value: "\(vm.totalPosesCompleted)/30")
-                    statRow("Best Score", value: "\(vm.bestScore)%")
-                    statRow("Average Score", value: "\(vm.averageScore)%")
+                statsSection("Resumen") {
+                    statRow("Intentos Totales", value: "\(vm.totalAttempts)")
+                    statRow("Poses Completadas", value: "\(vm.totalPosesCompleted)/30")
+                    statRow("Mejor Puntuación", value: "\(vm.bestScore)%")
+                    statRow("Puntuación Media", value: "\(vm.averageScore)%")
                 }
 
                 // Medals
-                statsSection("Medals") {
+                statsSection("Medallas") {
                     HStack(spacing: 20) {
                         ForEach([Medal.platinum, .gold, .silver, .bronze], id: \.self) { medal in
                             VStack(spacing: 4) {
@@ -34,15 +34,15 @@ struct StatsView: View {
                 }
 
                 // Streaks
-                statsSection("Streaks") {
-                    statRow("Current Streak", value: "\(vm.currentStreak) days")
-                    statRow("Best Streak", value: "\(vm.bestStreak) days")
+                statsSection("Rachas") {
+                    statRow("Racha Actual", value: "\(vm.currentStreak) días")
+                    statRow("Mejor Racha", value: "\(vm.bestStreak) días")
                 }
 
                 // Achievements
-                statsSection("Achievements") {
+                statsSection("Logros") {
                     let progress = vm.achievementProgress
-                    statRow("Unlocked", value: "\(progress.unlocked)/\(progress.total)")
+                    statRow("Desbloqueados", value: "\(progress.unlocked)/\(progress.total)")
 
                     GeometryReader { geo in
                         ZStack(alignment: .leading) {
@@ -58,7 +58,7 @@ struct StatsView: View {
             .padding()
         }
         .background(Color.jojoDarkBg)
-        .navigationTitle("Statistics")
+        .navigationTitle("Estadísticas")
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(.dark, for: .navigationBar)
     }

@@ -48,7 +48,7 @@ struct CardSwipeView: View {
     private var headerBar: some View {
         HStack {
             VStack(alignment: .leading, spacing: 2) {
-                Text("\(viewModel.cardsRemaining) cards")
+                Text("\(viewModel.cardsRemaining) cartas")
                     .font(.caption.bold())
                     .foregroundStyle(.white)
 
@@ -111,14 +111,14 @@ struct CardSwipeView: View {
                 .font(.system(size: 50))
                 .foregroundStyle(.jojoGold.opacity(0.2))
 
-            Text("No more cards!")
+            Text("¡No más cartas!")
                 .font(.title2.bold())
                 .foregroundStyle(.white)
 
             Button {
                 withAnimation(.spring) { viewModel.shuffleDeck() }
             } label: {
-                Label("Shuffle Deck", systemImage: "shuffle")
+                Label("Barajar", systemImage: "shuffle")
                     .font(.headline)
                     .foregroundStyle(.jojoDarkBg)
                     .padding(.horizontal, 24)
@@ -135,13 +135,13 @@ struct CardSwipeView: View {
         HStack(spacing: 40) {
             HStack(spacing: 4) {
                 Image(systemName: "arrow.left")
-                Text("Skip")
+                Text("Pasar")
             }
             .font(.caption)
             .foregroundStyle(.gray)
 
             HStack(spacing: 4) {
-                Text("Try")
+                Text("Intentar")
                 Image(systemName: "arrow.right")
             }
             .font(.caption)

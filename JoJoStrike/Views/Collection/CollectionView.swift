@@ -39,13 +39,13 @@ struct CollectionView: View {
                     .padding(.bottom)
                 }
             }
-            .navigationTitle("Collection")
+            .navigationTitle("Colección")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     if viewModel.selectedRarity != nil || viewModel.selectedPart != nil {
-                        Button("Clear") {
+                        Button("Limpiar") {
                             withAnimation { viewModel.clearFilters() }
                         }
                         .foregroundStyle(.jojoGold)
@@ -64,7 +64,7 @@ struct CollectionView: View {
                     .font(.system(size: 32, weight: .black, design: .rounded))
                     .foregroundStyle(.jojoGold)
 
-                Text("poses collected")
+                Text("poses coleccionadas")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
 
@@ -140,9 +140,13 @@ struct CollectionView: View {
                     .frame(height: 120)
 
                 if unlocked {
-                    Image(systemName: "figure.stand")
-                        .font(.system(size: 40))
-                        .foregroundStyle(pose.rarity.color.opacity(0.5))
+                    PoseSilhouetteView(
+                        poseID: pose.id,
+                        color: pose.rarity.color,
+                        lineWidth: 2.5,
+                        showGlow: false
+                    )
+                    .padding(8)
                 } else {
                     Image(systemName: "questionmark")
                         .font(.system(size: 30))

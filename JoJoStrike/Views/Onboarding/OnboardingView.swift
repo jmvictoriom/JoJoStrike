@@ -5,10 +5,10 @@ struct OnboardingView: View {
     @State private var currentPage = 0
 
     private let pages: [(icon: String, title: String, subtitle: String, color: Color)] = [
-        ("rectangle.stack.fill", "DISCOVER", "Swipe through iconic JoJo poses\nfrom every Part", .jojoGold),
-        ("camera.viewfinder", "STRIKE A POSE", "Use your camera to replicate\nlegendary JoJo poses", .jojoRed),
-        ("trophy.fill", "COLLECT & MASTER", "Earn medals, level up, and unlock\nall 30 pose cards", .jojoPurple),
-        ("flame.fill", "DAILY CHALLENGE", "Complete a new pose every day\nand build your streak", .jojoOrange),
+        ("rectangle.stack.fill", "DESCUBRIR", "Desliza entre poses icónicas de JoJo\nde todas las Partes", .jojoGold),
+        ("camera.viewfinder", "HAZ LA POSE", "Usa tu cámara para replicar\nposes legendarias de JoJo", .jojoRed),
+        ("trophy.fill", "COLECCIONA", "Gana medallas, sube de nivel\ny desbloquea las 30 cartas", .jojoPurple),
+        ("flame.fill", "DESAFÍO DIARIO", "Completa una pose nueva cada día\ny mantén tu racha", .jojoOrange),
     ]
 
     var body: some View {
@@ -60,7 +60,7 @@ struct OnboardingView: View {
                         Button {
                             appState.completeOnboarding()
                         } label: {
-                            Text("LET'S GO!")
+                            Text("¡VAMOS!")
                                 .font(.headline.bold())
                                 .tracking(2)
                                 .foregroundStyle(.jojoDarkBg)
@@ -73,7 +73,7 @@ struct OnboardingView: View {
                         Button {
                             withAnimation { currentPage += 1 }
                         } label: {
-                            Text("NEXT")
+                            Text("SIGUIENTE")
                                 .font(.headline.bold())
                                 .tracking(2)
                                 .foregroundStyle(.jojoDarkBg)
@@ -88,7 +88,7 @@ struct OnboardingView: View {
                         Button {
                             appState.completeOnboarding()
                         } label: {
-                            Text("Skip")
+                            Text("Saltar")
                                 .foregroundStyle(.secondary)
                         }
                     }

@@ -10,10 +10,10 @@ final class CollectionViewModel {
     var sortBy: SortOption = .rarity
 
     enum SortOption: String, CaseIterable {
-        case rarity = "Rarity"
-        case difficulty = "Difficulty"
-        case part = "Part"
-        case name = "Name"
+        case rarity = "Rareza"
+        case difficulty = "Dificultad"
+        case part = "Parte"
+        case name = "Nombre"
     }
 
     var filteredPoses: [PoseCard] {
