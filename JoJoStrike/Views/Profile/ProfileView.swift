@@ -3,7 +3,11 @@ import SwiftData
 
 struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(AppState.self) private var appState
+    @Environment(LocalAuthService.self) private var authService
+    @Environment(CurrentProfileProvider.self) private var profileProvider
     @State private var vm = ProfileViewModel()
+    @State private var showLogoutConfirmation = false
 
     var body: some View {
         NavigationStack {
@@ -23,7 +27,7 @@ struct ProfileView: View {
             .navigationTitle("Perfil")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .onAppear { vm.ensureProfile(in: modelContext) }
+            .onAppear { vm.loadProfile(from: profileProvider) }
         }
     }
 
@@ -139,6 +143,21 @@ struct ProfileView: View {
                 StatsView(vm: vm)
             } label: {
                 navRow("Estadísticas", icon: "chart.bar.fill", detail: nil)
+            }
+
+            // Logout
+            Button {
+                showLogoutConfirmation = true
+            } label: {
+                navRow("Cerrar Sesión", icon: "rectangle.portrait.and.arrow.right", detail: nil)
+            }
+            .confirmationDialog("¿Cerrar sesión?", isPresented: $showLogoutConfirmation, titleVisibility: .visible) {
+                Button("Cerrar Sesión", role: .destructive) {
+                    authService.logout()
+                    profileProvider.clear()
+                    appState.logout()
+                }
+                Button("Cancelar", role: .cancel) {}
             }
         }
     }

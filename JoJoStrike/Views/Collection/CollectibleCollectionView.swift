@@ -2,11 +2,11 @@ import SwiftUI
 import SwiftData
 
 struct CollectibleCollectionView: View {
-    @Query private var profiles: [UserProfile]
+    @Environment(CurrentProfileProvider.self) private var profileProvider
     @State private var vm = CollectibleCollectionViewModel()
 
     private var ownedCards: [OwnedCollectibleCard] {
-        profiles.first?.ownedCards ?? []
+        profileProvider.profile?.ownedCards ?? []
     }
 
     private let columns = [

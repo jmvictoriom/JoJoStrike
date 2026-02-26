@@ -1,10 +1,13 @@
 import SwiftUI
+import SwiftData
 
 @Observable
 @MainActor
 final class AppState {
     var selectedTab: AppTab = .training
-    var hasCompletedOnboarding: Bool = UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
+    var isAuthenticated: Bool = false
+    var currentUserAccountID: String?
+    var hasCompletedOnboarding: Bool = false
     var showingPoseChallenge: Bool = false
     var activePoseID: String?
 
@@ -15,8 +18,28 @@ final class AppState {
         case profile
     }
 
-    func completeOnboarding() {
+    func loginSucceeded(userAccountID: String, onboardingCompleted: Bool) {
+        currentUserAccountID = userAccountID
+        isAuthenticated = true
+        hasCompletedOnboarding = onboardingCompleted
+    }
+
+    func logout() {
+        isAuthenticated = false
+        currentUserAccountID = nil
+        hasCompletedOnboarding = false
+        selectedTab = .training
+    }
+
+    func completeOnboarding(in context: ModelContext) {
         hasCompletedOnboarding = true
-        UserDefaults.standard.set(true, forKey: "hasCompletedOnboarding")
+        guard let accountID = currentUserAccountID else { return }
+        let descriptor = FetchDescriptor<UserAccount>(
+            predicate: #Predicate { $0.id == accountID }
+        )
+        if let account = try? context.fetch(descriptor).first {
+            account.hasCompletedOnboarding = true
+            try? context.save()
+        }
     }
 }

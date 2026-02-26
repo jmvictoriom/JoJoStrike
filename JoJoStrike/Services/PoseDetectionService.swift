@@ -1,5 +1,5 @@
 import Foundation
-import AVFoundation
+@preconcurrency import AVFoundation
 import Vision
 
 @Observable
@@ -49,12 +49,18 @@ final class PoseDetectionService: NSObject {
 
         captureSession.commitConfiguration()
 
-        captureSession.startRunning()
+        let session = captureSession
+        processingQueue.async {
+            session.startRunning()
+        }
         isDetecting = true
     }
 
     func stopSession() {
-        captureSession.stopRunning()
+        let session = captureSession
+        processingQueue.async {
+            session.stopRunning()
+        }
         isDetecting = false
         detectedJoints = [:]
     }
@@ -125,7 +131,7 @@ final class PoseDetectionService: NSObject {
     }
 }
 
-extension PoseDetectionService: @preconcurrency AVCaptureVideoDataOutputSampleBufferDelegate {
+extension PoseDetectionService: AVCaptureVideoDataOutputSampleBufferDelegate {
     nonisolated func captureOutput(
         _ output: AVCaptureOutput,
         didOutput sampleBuffer: CMSampleBuffer,

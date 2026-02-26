@@ -3,10 +3,10 @@ import SwiftData
 
 struct ShopView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var profiles: [UserProfile]
+    @Environment(CurrentProfileProvider.self) private var profileProvider
     @State private var vm = ShopViewModel()
 
-    private var profile: UserProfile? { profiles.first }
+    private var profile: UserProfile? { profileProvider.profile }
 
     var body: some View {
         NavigationStack {

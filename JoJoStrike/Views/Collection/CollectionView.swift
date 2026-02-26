@@ -2,11 +2,11 @@ import SwiftUI
 import SwiftData
 
 struct CollectionView: View {
-    @Query private var profiles: [UserProfile]
+    @Environment(CurrentProfileProvider.self) private var profileProvider
     @State private var viewModel = CollectionViewModel()
 
     private var unlockedIDs: [String] {
-        profiles.first?.unlockedPoseIDs ?? []
+        profileProvider.profile?.unlockedPoseIDs ?? []
     }
 
     private var progress: (unlocked: Int, total: Int) {
@@ -191,14 +191,14 @@ struct CollectionView: View {
     // MARK: - Helpers
 
     private func bestMedal(for poseID: String) -> Medal {
-        guard let profile = profiles.first else { return .none }
+        guard let profile = profileProvider.profile else { return .none }
         let attempts = profile.attempts.filter { $0.poseID == poseID }
         guard let best = attempts.max(by: { $0.score < $1.score }) else { return .none }
         return Medal(rawValue: best.medal) ?? .none
     }
 
     private func bestScore(for poseID: String) -> Int {
-        guard let profile = profiles.first else { return 0 }
+        guard let profile = profileProvider.profile else { return 0 }
         return profile.attempts.filter { $0.poseID == poseID }.map(\.score).max() ?? 0
     }
 }

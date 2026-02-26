@@ -74,16 +74,7 @@ final class ProfileViewModel {
         GamificationService.dailyChallengePose()
     }
 
-    func ensureProfile(in context: ModelContext) {
-        let descriptor = FetchDescriptor<UserProfile>()
-        let existing = try? context.fetch(descriptor)
-        if existing?.isEmpty ?? true {
-            let newProfile = UserProfile()
-            context.insert(newProfile)
-            try? context.save()
-            profile = newProfile
-        } else {
-            profile = existing?.first
-        }
+    func loadProfile(from provider: CurrentProfileProvider) {
+        profile = provider.profile
     }
 }

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @Environment(AppState.self) private var appState
+    @Environment(\.modelContext) private var modelContext
     @State private var currentPage = 0
 
     private let pages: [(icon: String, title: String, subtitle: String, color: Color)] = [
@@ -58,7 +59,7 @@ struct OnboardingView: View {
                 VStack(spacing: 12) {
                     if currentPage == pages.count - 1 {
                         Button {
-                            appState.completeOnboarding()
+                            appState.completeOnboarding(in: modelContext)
                         } label: {
                             Text("¡VAMOS!")
                                 .font(.headline.bold())
@@ -86,7 +87,7 @@ struct OnboardingView: View {
 
                     if currentPage < pages.count - 1 {
                         Button {
-                            appState.completeOnboarding()
+                            appState.completeOnboarding(in: modelContext)
                         } label: {
                             Text("Saltar")
                                 .foregroundStyle(.secondary)

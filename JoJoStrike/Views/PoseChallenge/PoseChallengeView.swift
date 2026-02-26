@@ -5,7 +5,7 @@ struct PoseChallengeView: View {
     let poseID: String
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
-    @Query private var profiles: [UserProfile]
+    @Environment(CurrentProfileProvider.self) private var profileProvider
     @State private var viewModel: PoseChallengeViewModel?
 
     var body: some View {
@@ -154,6 +154,36 @@ struct PoseChallengeView: View {
                 .background(.ultraThinMaterial)
             }
 
+            // Reference pose image
+            VStack {
+                Spacer()
+                HStack {
+                    VStack(spacing: 4) {
+                        Image(vm.pose.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 150)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.jojoGold.opacity(0.6), lineWidth: 2)
+                            )
+                            .shadow(color: .black.opacity(0.5), radius: 6)
+
+                        Text("Referencia")
+                            .font(.caption2.bold())
+                            .foregroundStyle(.jojoGold)
+                    }
+                    .padding(8)
+                    .background(.ultraThinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .padding(.leading, 12)
+                    .padding(.bottom, 90)
+
+                    Spacer()
+                }
+            }
+
             // Close button overlay
             VStack {
                 HStack {
@@ -187,7 +217,7 @@ struct PoseChallengeView: View {
     }
 
     private func awardRewards(vm: PoseChallengeViewModel, score: Int, medal: Medal) {
-        guard let profile = profiles.first else { return }
+        guard let profile = profileProvider.profile else { return }
 
         let isDaily = vm.pose.id == GamificationService.dailyChallengePose().id
         let isFirst = !profile.attempts.contains { $0.poseID == vm.pose.id && $0.score >= Medal.bronze.minimumScore }

@@ -37,17 +37,6 @@
 		9D1FEE3661EB8152EA68D9EB /* PoseComparisonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E85703DFFF496A9A66479 /* PoseComparisonService.swift */; };
 		A46E14BC2A8328127B8E2E6F /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B54A3BB960305E710FFECA /* StatsView.swift */; };
 		A964BF846656CC93F767E429 /* PoseSilhouetteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393A8E84B51935D229BF0F0 /* PoseSilhouetteView.swift */; };
-		AA09E4DB1C530A50CBED8B36 /* PoseChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F21C9AC718C4308CC88ABE /* PoseChallengeViewModel.swift */; };
-		AA34D70F625CDAE984988A22 /* Color+JoJo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EF2B024BEF29CE2633D26 /* Color+JoJo.swift */; };
-		ACF668D03E812DA917416844 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */; };
-		B56657FAFE75C8856DC4B4A0 /* PoseResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66419206CD770437472626 /* PoseResultView.swift */; };
-		B58151E4C5CEAFD54FC729F3 /* XPProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D66E1FEB799FFDFBAD2140 /* XPProgressBar.swift */; };
-		C9313166CC36EB76FE2DE4DF /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */; };
-		D9008A33913790F661973361 /* RarityBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DAC452344205764301D199 /* RarityBorder.swift */; };
-		E3CC7733E028FFB601743753 /* CardSwipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E245067D6067999B2ED3B8 /* CardSwipeViewModel.swift */; };
-		E7FFB6F365330930328DDEDF /* JoJoStrikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */; };
-		EE6D67CD52BB8543A300BEB0 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A6B7AD544A158646850A8 /* Achievement.swift */; };
-		FEAFAFD93FC538CAAC997387 /* CardDeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A78D0344F1A2CCB0BBFFF /* CardDeckService.swift */; };
 		AA01000000000001AAAAAAAA /* StandStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01000000000001BBBBBBBB /* StandStats.swift */; };
 		AA02000000000002AAAAAAAA /* CollectibleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB02000000000002BBBBBBBB /* CollectibleCard.swift */; };
 		AA03000000000003AAAAAAAA /* CardPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03000000000003BBBBBBBB /* CardPack.swift */; };
@@ -57,6 +46,7 @@
 		AA07000000000007AAAAAAAA /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07000000000007BBBBBBBB /* TrainingViewModel.swift */; };
 		AA08000000000008AAAAAAAA /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08000000000008BBBBBBBB /* ShopViewModel.swift */; };
 		AA09000000000009AAAAAAAA /* CollectibleCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09000000000009BBBBBBBB /* CollectibleCollectionViewModel.swift */; };
+		AA09E4DB1C530A50CBED8B36 /* PoseChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F21C9AC718C4308CC88ABE /* PoseChallengeViewModel.swift */; };
 		AA10000000000010AAAAAAAA /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10000000000010BBBBBBBB /* TrainingView.swift */; };
 		AA11000000000011AAAAAAAA /* TrainingPoseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11000000000011BBBBBBBB /* TrainingPoseRow.swift */; };
 		AA12000000000012AAAAAAAA /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12000000000012BBBBBBBB /* ShopView.swift */; };
@@ -66,7 +56,52 @@
 		AA16000000000016AAAAAAAA /* CollectibleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16000000000016BBBBBBBB /* CollectibleCardView.swift */; };
 		AA17000000000017AAAAAAAA /* CollectibleCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB17000000000017BBBBBBBB /* CollectibleCardDetailView.swift */; };
 		AA18000000000018AAAAAAAA /* StandStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18000000000018BBBBBBBB /* StandStatsView.swift */; };
+		AA19000000000019AAAAAAAA /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19000000000019BBBBBBBB /* AudioService.swift */; };
+		AA34D70F625CDAE984988A22 /* Color+JoJo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EF2B024BEF29CE2633D26 /* Color+JoJo.swift */; };
+		ACF668D03E812DA917416844 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */; };
+		B56657FAFE75C8856DC4B4A0 /* PoseResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66419206CD770437472626 /* PoseResultView.swift */; };
+		B58151E4C5CEAFD54FC729F3 /* XPProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D66E1FEB799FFDFBAD2140 /* XPProgressBar.swift */; };
+		C9313166CC36EB76FE2DE4DF /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */; };
+		D9008A33913790F661973361 /* RarityBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DAC452344205764301D199 /* RarityBorder.swift */; };
 		DD30000000000030DDDDDDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07BEACB2F4F57440021E8DB /* Assets.xcassets */; };
+		E3CC7733E028FFB601743753 /* CardSwipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E245067D6067999B2ED3B8 /* CardSwipeViewModel.swift */; };
+		E7FFB6F365330930328DDEDF /* JoJoStrikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */; };
+		EE01000000000001EE000001 /* countdown_tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF01000000000001FF000001 /* countdown_tick.wav */; };
+		EE02000000000002EE000002 /* countdown_go.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF02000000000002FF000002 /* countdown_go.wav */; };
+		EE03000000000003EE000003 /* pose_start.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF03000000000003FF000003 /* pose_start.wav */; };
+		EE04000000000004EE000004 /* score_bronze.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF04000000000004FF000004 /* score_bronze.wav */; };
+		EE05000000000005EE000005 /* score_silver.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF05000000000005FF000005 /* score_silver.wav */; };
+		EE06000000000006EE000006 /* score_gold.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF06000000000006FF000006 /* score_gold.wav */; };
+		EE07000000000007EE000007 /* score_platinum.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF07000000000007FF000007 /* score_platinum.wav */; };
+		EE08000000000008EE000008 /* menacing.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF08000000000008FF000008 /* menacing.wav */; };
+		EE09000000000009EE000009 /* pack_whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF09000000000009FF000009 /* pack_whoosh.wav */; };
+		EE10000000000010EE000010 /* card_flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF10000000000010FF000010 /* card_flip.wav */; };
+		EE11000000000011EE000011 /* reveal_common.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF11000000000011FF000011 /* reveal_common.wav */; };
+		EE12000000000012EE000012 /* reveal_rare.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF12000000000012FF000012 /* reveal_rare.wav */; };
+		EE13000000000013EE000013 /* reveal_epic.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF13000000000013FF000013 /* reveal_epic.wav */; };
+		EE14000000000014EE000014 /* reveal_legendary.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF14000000000014FF000014 /* reveal_legendary.wav */; };
+		EE15000000000015EE000015 /* reveal_bizarre.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF15000000000015FF000015 /* reveal_bizarre.wav */; };
+		EE16000000000016EE000016 /* coin_earn.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF16000000000016FF000016 /* coin_earn.wav */; };
+		EE17000000000017EE000017 /* xp_gain.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF17000000000017FF000017 /* xp_gain.wav */; };
+		EE18000000000018EE000018 /* result_score.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF18000000000018FF000018 /* result_score.wav */; };
+		EE19000000000019EE000019 /* result_medal.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF19000000000019FF000019 /* result_medal.wav */; };
+		EE20000000000020EE000020 /* ora_ora.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF20000000000020FF000020 /* ora_ora.wav */; };
+		EE21000000000021EE000021 /* muda_muda.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF21000000000021FF000021 /* muda_muda.wav */; };
+		EE22000000000022EE000022 /* dora_dora.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF22000000000022FF000022 /* dora_dora.wav */; };
+		EE23000000000023EE000023 /* arrivederci.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF23000000000023FF000023 /* arrivederci.wav */; };
+		EE24000000000024EE000024 /* emerald_splash.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF24000000000024FF000024 /* emerald_splash.wav */; };
+		EE25000000000025EE000025 /* wryyy.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF25000000000025FF000025 /* wryyy.wav */; };
+		EE26000000000026EE000026 /* ayaya.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF26000000000026FF000026 /* ayaya.wav */; };
+		EE27000000000027EE000027 /* za_warudo.wav in Resources */ = {isa = PBXBuildFile; fileRef = FF27000000000027FF000027 /* za_warudo.wav */; };
+		EE6D67CD52BB8543A300BEB0 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A6B7AD544A158646850A8 /* Achievement.swift */; };
+		FEAFAFD93FC538CAAC997387 /* CardDeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A78D0344F1A2CCB0BBFFF /* CardDeckService.swift */; };
+		CC01A0C1000000001CC00A01 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01A0D1000000001DD00A01 /* UserAccount.swift */; };
+		CC02A0C2000000002CC00A02 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02A0D2000000002DD00A02 /* AuthService.swift */; };
+		CC03A0C3000000003CC00A03 /* LocalAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03A0D3000000003DD00A03 /* LocalAuthService.swift */; };
+		CC04A0C4000000004CC00A04 /* TestUserSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD04A0D4000000004DD00A04 /* TestUserSeeder.swift */; };
+		CC05A0C5000000005CC00A05 /* CurrentProfileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05A0D5000000005DD00A05 /* CurrentProfileProvider.swift */; };
+		CC06A0C6000000006CC00A06 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD06A0D6000000006DD00A06 /* AuthViewModel.swift */; };
+		CC07A0C7000000007CC00A07 /* AuthContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A0D7000000007DD00A07 /* AuthContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,16 +138,6 @@
 		B0C53E3A719A55BE8DFF014C /* SwipeGestureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureModifier.swift; sourceTree = "<group>"; };
 		B251C991DABF3E522A1480E1 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		B98FE04FCC1E577AB3B1BF1B /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
-		C88DD31057D210B89158E8C1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		D3B54A3BB960305E710FFECA /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
-		DAD72BC28038D0BD5F92C4EC /* JoJo Strike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JoJo Strike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1B2F01BCC4289011DC4AD83 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
-		E2484938B8B7A92E23D4F5EC /* PoseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategory.swift; sourceTree = "<group>"; };
-		E68A37B02E584D247E563DFC /* PoseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCard.swift; sourceTree = "<group>"; };
-		EB27813122DF4D5DD45B7F07 /* PoseChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseChallengeView.swift; sourceTree = "<group>"; };
-		F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
-		F609DC673B718479772A6BF4 /* PoseAttempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseAttempt.swift; sourceTree = "<group>"; };
-		FB3D8C2F82E2C75465723C5D /* SwiftDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModels.swift; sourceTree = "<group>"; };
 		BB01000000000001BBBBBBBB /* StandStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandStats.swift; sourceTree = "<group>"; };
 		BB02000000000002BBBBBBBB /* CollectibleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCard.swift; sourceTree = "<group>"; };
 		BB03000000000003BBBBBBBB /* CardPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPack.swift; sourceTree = "<group>"; };
@@ -131,9 +156,72 @@
 		BB16000000000016BBBBBBBB /* CollectibleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCardView.swift; sourceTree = "<group>"; };
 		BB17000000000017BBBBBBBB /* CollectibleCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCardDetailView.swift; sourceTree = "<group>"; };
 		BB18000000000018BBBBBBBB /* StandStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandStatsView.swift; sourceTree = "<group>"; };
+		BB19000000000019BBBBBBBB /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		C88DD31057D210B89158E8C1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D3B54A3BB960305E710FFECA /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		DAD72BC28038D0BD5F92C4EC /* JoJo Strike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JoJo Strike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B2F01BCC4289011DC4AD83 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		E2484938B8B7A92E23D4F5EC /* PoseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategory.swift; sourceTree = "<group>"; };
+		E68A37B02E584D247E563DFC /* PoseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCard.swift; sourceTree = "<group>"; };
+		EB27813122DF4D5DD45B7F07 /* PoseChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseChallengeView.swift; sourceTree = "<group>"; };
+		F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		F609DC673B718479772A6BF4 /* PoseAttempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseAttempt.swift; sourceTree = "<group>"; };
+		FB3D8C2F82E2C75465723C5D /* SwiftDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModels.swift; sourceTree = "<group>"; };
+		FF01000000000001FF000001 /* countdown_tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = countdown_tick.wav; sourceTree = "<group>"; };
+		FF02000000000002FF000002 /* countdown_go.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = countdown_go.wav; sourceTree = "<group>"; };
+		FF03000000000003FF000003 /* pose_start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pose_start.wav; sourceTree = "<group>"; };
+		FF04000000000004FF000004 /* score_bronze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score_bronze.wav; sourceTree = "<group>"; };
+		FF05000000000005FF000005 /* score_silver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score_silver.wav; sourceTree = "<group>"; };
+		FF06000000000006FF000006 /* score_gold.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score_gold.wav; sourceTree = "<group>"; };
+		FF07000000000007FF000007 /* score_platinum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score_platinum.wav; sourceTree = "<group>"; };
+		FF08000000000008FF000008 /* menacing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = menacing.wav; sourceTree = "<group>"; };
+		FF09000000000009FF000009 /* pack_whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pack_whoosh.wav; sourceTree = "<group>"; };
+		FF10000000000010FF000010 /* card_flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card_flip.wav; sourceTree = "<group>"; };
+		FF11000000000011FF000011 /* reveal_common.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reveal_common.wav; sourceTree = "<group>"; };
+		FF12000000000012FF000012 /* reveal_rare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reveal_rare.wav; sourceTree = "<group>"; };
+		FF13000000000013FF000013 /* reveal_epic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reveal_epic.wav; sourceTree = "<group>"; };
+		FF14000000000014FF000014 /* reveal_legendary.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reveal_legendary.wav; sourceTree = "<group>"; };
+		FF15000000000015FF000015 /* reveal_bizarre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reveal_bizarre.wav; sourceTree = "<group>"; };
+		FF16000000000016FF000016 /* coin_earn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin_earn.wav; sourceTree = "<group>"; };
+		FF17000000000017FF000017 /* xp_gain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xp_gain.wav; sourceTree = "<group>"; };
+		FF18000000000018FF000018 /* result_score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = result_score.wav; sourceTree = "<group>"; };
+		FF19000000000019FF000019 /* result_medal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = result_medal.wav; sourceTree = "<group>"; };
+		FF20000000000020FF000020 /* ora_ora.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ora_ora.wav; sourceTree = "<group>"; };
+		FF21000000000021FF000021 /* muda_muda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = muda_muda.wav; sourceTree = "<group>"; };
+		FF22000000000022FF000022 /* dora_dora.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dora_dora.wav; sourceTree = "<group>"; };
+		FF23000000000023FF000023 /* arrivederci.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = arrivederci.wav; sourceTree = "<group>"; };
+		FF24000000000024FF000024 /* emerald_splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = emerald_splash.wav; sourceTree = "<group>"; };
+		FF25000000000025FF000025 /* wryyy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wryyy.wav; sourceTree = "<group>"; };
+		FF26000000000026FF000026 /* ayaya.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ayaya.wav; sourceTree = "<group>"; };
+		FF27000000000027FF000027 /* za_warudo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = za_warudo.wav; sourceTree = "<group>"; };
+		DD01A0D1000000001DD00A01 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		DD02A0D2000000002DD00A02 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DD03A0D3000000003DD00A03 /* LocalAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthService.swift; sourceTree = "<group>"; };
+		DD04A0D4000000004DD00A04 /* TestUserSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserSeeder.swift; sourceTree = "<group>"; };
+		DD05A0D5000000005DD00A05 /* CurrentProfileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentProfileProvider.swift; sourceTree = "<group>"; };
+		DD06A0D6000000006DD00A06 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		DD07A0D7000000007DD00A07 /* AuthContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		EE01A0C10000DAF01EE00A01 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DD02A0D2000000002DD00A02 /* AuthService.swift */,
+				DD03A0D3000000003DD00A03 /* LocalAuthService.swift */,
+				DD04A0D4000000004DD00A04 /* TestUserSeeder.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EE02A0C20000DAF02EE00A02 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A0D7000000007DD00A07 /* AuthContainerView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		099E474D05588688CA03AC6D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				FB3D8C2F82E2C75465723C5D /* SwiftDataModels.swift */,
+				DD01A0D1000000001DD00A01 /* UserAccount.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -183,6 +272,7 @@
 		3614EF3516BB38228C1A8456 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DD06A0D6000000006DD00A06 /* AuthViewModel.swift */,
 				38E245067D6067999B2ED3B8 /* CardSwipeViewModel.swift */,
 				BB09000000000009BBBBBBBB /* CollectibleCollectionViewModel.swift */,
 				B251C991DABF3E522A1480E1 /* CollectionViewModel.swift */,
@@ -204,6 +294,8 @@
 		54C2B607110F5D9163E164D1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EE01A0C10000DAF01EE00A01 /* Auth */,
+				BB19000000000019BBBBBBBB /* AudioService.swift */,
 				005A78D0344F1A2CCB0BBFFF /* CardDeckService.swift */,
 				BB06000000000006BBBBBBBB /* CardPackService.swift */,
 				BB05000000000005BBBBBBBB /* CoinService.swift */,
@@ -249,6 +341,26 @@
 		A07BEACA2F4F57440021E8DB /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				FF10000000000010FF000010 /* card_flip.wav */,
+				FF16000000000016FF000016 /* coin_earn.wav */,
+				FF02000000000002FF000002 /* countdown_go.wav */,
+				FF01000000000001FF000001 /* countdown_tick.wav */,
+				FF08000000000008FF000008 /* menacing.wav */,
+				FF09000000000009FF000009 /* pack_whoosh.wav */,
+				FF03000000000003FF000003 /* pose_start.wav */,
+				FF19000000000019FF000019 /* result_medal.wav */,
+				FF18000000000018FF000018 /* result_score.wav */,
+				FF15000000000015FF000015 /* reveal_bizarre.wav */,
+				FF11000000000011FF000011 /* reveal_common.wav */,
+				FF13000000000013FF000013 /* reveal_epic.wav */,
+				FF14000000000014FF000014 /* reveal_legendary.wav */,
+				FF12000000000012FF000012 /* reveal_rare.wav */,
+				FF04000000000004FF000004 /* score_bronze.wav */,
+				FF06000000000006FF000006 /* score_gold.wav */,
+				FF07000000000007FF000007 /* score_platinum.wav */,
+				FF05000000000005FF000005 /* score_silver.wav */,
+				FF17000000000017FF000017 /* xp_gain.wav */,
+				GG01000000000001GG000001 /* stand_cries */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -292,33 +404,6 @@
 			path = PoseChallenge;
 			sourceTree = "<group>";
 		};
-		DCF0DCA947120A67C3DAFF21 = {
-			isa = PBXGroup;
-			children = (
-				EDA223B14441D403C42637CA /* JoJoStrike */,
-				C3752EBBD641C3BFC3CDDEBC /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		DF5A749553CCD47B905CCBFC /* App */ = {
-			isa = PBXGroup;
-			children = (
-				0ABC793956EC173B3839D56C /* AppState.swift */,
-				9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		E08E56CD38A8170F89291EC0 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */,
-				088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */,
-				D3B54A3BB960305E710FFECA /* StatsView.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		CC20000000000020CCCCCCCC /* Training */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,9 +423,38 @@
 			path = Shop;
 			sourceTree = "<group>";
 		};
+		DCF0DCA947120A67C3DAFF21 = {
+			isa = PBXGroup;
+			children = (
+				EDA223B14441D403C42637CA /* JoJoStrike */,
+				C3752EBBD641C3BFC3CDDEBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF5A749553CCD47B905CCBFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC793956EC173B3839D56C /* AppState.swift */,
+				DD05A0D5000000005DD00A05 /* CurrentProfileProvider.swift */,
+				9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E08E56CD38A8170F89291EC0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */,
+				088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */,
+				D3B54A3BB960305E710FFECA /* StatsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		E41BD9766E6E65B39EA71D5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE02A0C20000DAF02EE00A02 /* Auth */,
 				A6C3D4E2F93DAF0A7D9E4665 /* CardSwipe */,
 				FF398732346A71BC2B82E237 /* Collection */,
 				1A91CB49A0531C7332F90D72 /* Components */,
@@ -393,6 +507,21 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
+		GG01000000000001GG000001 /* stand_cries */ = {
+			isa = PBXGroup;
+			children = (
+				FF23000000000023FF000023 /* arrivederci.wav */,
+				FF26000000000026FF000026 /* ayaya.wav */,
+				FF22000000000022FF000022 /* dora_dora.wav */,
+				FF24000000000024FF000024 /* emerald_splash.wav */,
+				FF21000000000021FF000021 /* muda_muda.wav */,
+				FF20000000000020FF000020 /* ora_ora.wav */,
+				FF25000000000025FF000025 /* wryyy.wav */,
+				FF27000000000027FF000027 /* za_warudo.wav */,
+			);
+			path = stand_cries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,7 +550,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					928C5C2E849036668AE3E14E = {
 						ProvisioningStyle = Automatic;
@@ -452,6 +581,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD30000000000030DDDDDDDD /* Assets.xcassets in Resources */,
+				EE01000000000001EE000001 /* countdown_tick.wav in Resources */,
+				EE02000000000002EE000002 /* countdown_go.wav in Resources */,
+				EE03000000000003EE000003 /* pose_start.wav in Resources */,
+				EE04000000000004EE000004 /* score_bronze.wav in Resources */,
+				EE05000000000005EE000005 /* score_silver.wav in Resources */,
+				EE06000000000006EE000006 /* score_gold.wav in Resources */,
+				EE07000000000007EE000007 /* score_platinum.wav in Resources */,
+				EE08000000000008EE000008 /* menacing.wav in Resources */,
+				EE09000000000009EE000009 /* pack_whoosh.wav in Resources */,
+				EE10000000000010EE000010 /* card_flip.wav in Resources */,
+				EE11000000000011EE000011 /* reveal_common.wav in Resources */,
+				EE12000000000012EE000012 /* reveal_rare.wav in Resources */,
+				EE13000000000013EE000013 /* reveal_epic.wav in Resources */,
+				EE14000000000014EE000014 /* reveal_legendary.wav in Resources */,
+				EE15000000000015EE000015 /* reveal_bizarre.wav in Resources */,
+				EE16000000000016EE000016 /* coin_earn.wav in Resources */,
+				EE17000000000017EE000017 /* xp_gain.wav in Resources */,
+				EE18000000000018EE000018 /* result_score.wav in Resources */,
+				EE19000000000019EE000019 /* result_medal.wav in Resources */,
+				EE20000000000020EE000020 /* ora_ora.wav in Resources */,
+				EE21000000000021EE000021 /* muda_muda.wav in Resources */,
+				EE22000000000022EE000022 /* dora_dora.wav in Resources */,
+				EE23000000000023EE000023 /* arrivederci.wav in Resources */,
+				EE24000000000024EE000024 /* emerald_splash.wav in Resources */,
+				EE25000000000025EE000025 /* wryyy.wav in Resources */,
+				EE26000000000026EE000026 /* ayaya.wav in Resources */,
+				EE27000000000027EE000027 /* za_warudo.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +677,14 @@
 				AA16000000000016AAAAAAAA /* CollectibleCardView.swift in Sources */,
 				AA17000000000017AAAAAAAA /* CollectibleCardDetailView.swift in Sources */,
 				AA18000000000018AAAAAAAA /* StandStatsView.swift in Sources */,
+				AA19000000000019AAAAAAAA /* AudioService.swift in Sources */,
+				CC01A0C1000000001CC00A01 /* UserAccount.swift in Sources */,
+				CC02A0C2000000002CC00A02 /* AuthService.swift in Sources */,
+				CC03A0C3000000003CC00A03 /* LocalAuthService.swift in Sources */,
+				CC04A0C4000000004CC00A04 /* TestUserSeeder.swift in Sources */,
+				CC05A0C5000000005CC00A05 /* CurrentProfileProvider.swift in Sources */,
+				CC06A0C6000000006CC00A06 /* AuthViewModel.swift in Sources */,
+				CC07A0C7000000007CC00A07 /* AuthContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +699,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6L5VDX4RR3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "JoJo Strike needs camera access to detect your poses and compare them with iconic JoJo poses.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -590,8 +753,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -612,6 +777,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
@@ -653,8 +819,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -668,6 +836,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 6.0;
@@ -682,7 +851,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6L5VDX4RR3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "JoJo Strike needs camera access to detect your poses and compare them with iconic JoJo poses.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

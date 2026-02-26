@@ -3,11 +3,11 @@ import SwiftData
 
 struct TrainingView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var profiles: [UserProfile]
+    @Environment(CurrentProfileProvider.self) private var profileProvider
     @State private var vm = TrainingViewModel()
     @State private var selectedPoseID: String?
 
-    private var profile: UserProfile? { profiles.first }
+    private var profile: UserProfile? { profileProvider.profile }
 
     var body: some View {
         NavigationStack {

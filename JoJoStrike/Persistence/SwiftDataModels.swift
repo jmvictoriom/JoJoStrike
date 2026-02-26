@@ -3,6 +3,7 @@ import SwiftData
 
 @Model
 final class UserProfile {
+    var userAccountID: String
     var displayName: String
     var level: Int
     var totalXP: Int
@@ -20,11 +21,13 @@ final class UserProfile {
     var ownedCards: [OwnedCollectibleCard]
 
     init(
+        userAccountID: String = "",
         displayName: String = "Stand User",
         level: Int = 1,
         totalXP: Int = 0,
-        coins: Int = 0
+        coins: Int = 100_000
     ) {
+        self.userAccountID = userAccountID
         self.displayName = displayName
         self.level = level
         self.totalXP = totalXP
