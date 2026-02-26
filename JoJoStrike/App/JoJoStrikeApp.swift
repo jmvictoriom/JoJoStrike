@@ -19,7 +19,8 @@ struct JoJoStrikeApp: App {
         }
         .modelContainer(for: [
             UserProfile.self,
-            PoseAttemptRecord.self
+            PoseAttemptRecord.self,
+            OwnedCollectibleCard.self
         ])
     }
 }

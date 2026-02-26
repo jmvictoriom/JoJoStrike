@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049525CB7C1533C1F900CA10 /* PoseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF3C4B6636462EEBB08B75 /* PoseDatabase.swift */; };
+		1027F403B061249114B185DB /* PoseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40462C27585B9F6083B4AD1E /* PoseCardView.swift */; };
+		1E76C3FC91B66BE7BF9AC93E /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C456AED47F99B66EB295C66 /* FilterView.swift */; };
+		21289C5CDE7A2FE7285F0602 /* GamificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB174DE391B8C2C55AF6FC /* GamificationService.swift */; };
+		23210CC9F4ACF4052DC47638 /* CardSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE6F20F6BFA91AE7EE813BC /* CardSwipeView.swift */; };
+		2603323943074E051E514992 /* PoseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A37B02E584D247E563DFC /* PoseCard.swift */; };
+		262AF56E582F22DB7B21F44D /* PoseDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892AF79474C22B84A119CCD /* PoseDetectionService.swift */; };
+		3377A76A8E6432725D2AAEB4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC793956EC173B3839D56C /* AppState.swift */; };
+		3466F30ACAA9CAD94BF42094 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A892B93B2543EE15AA45A /* OnboardingView.swift */; };
+		35672542C5232896AAA07088 /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FE04FCC1E577AB3B1BF1B /* HapticsService.swift */; };
+		37529CFEF530E410519F179D /* PoseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66628B812E72B79404F916 /* PoseOverlayView.swift */; };
+		377E1597EE2A84A558D45196 /* AchievementDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F42CDC91AB5A3C60F26CBB /* AchievementDatabase.swift */; };
+		3897340CDB08EC9058FB2498 /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C87F521F5FB255ED4B43E6 /* ParticleEffect.swift */; };
+		3D057E4F163441FE26B3B689 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A6C955D428D4EC8C5174FC /* CollectionView.swift */; };
+		462E21F1C7E46DC41B3CB9B2 /* SwiftDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D8C2F82E2C75465723C5D /* SwiftDataModels.swift */; };
+		512539DB47DA9E1B2F861B39 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2F01BCC4289011DC4AD83 /* CardDetailView.swift */; };
+		5516815B18DC7791A31869EA /* PoseAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609DC673B718479772A6BF4 /* PoseAttempt.swift */; };
+		59B17471E26EEF27B427C97F /* MenacingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE3D86D07BF756B3BDB0B0 /* MenacingText.swift */; };
+		5CA12806F657BD5EF84029DF /* SwipeGestureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C53E3A719A55BE8DFF014C /* SwipeGestureModifier.swift */; };
+		618D3CFE00144165F9A69458 /* PoseChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB27813122DF4D5DD45B7F07 /* PoseChallengeView.swift */; };
+		63FECCD94977A1944957C37B /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B251C991DABF3E522A1480E1 /* CollectionViewModel.swift */; };
+		6ACDA44CE30D79556C206B59 /* PoseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2484938B8B7A92E23D4F5EC /* PoseCategory.swift */; };
+		71CE4809FE097FDF574F63F6 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647346942735C3B4187FFFBB /* CameraPreviewView.swift */; };
+		74E654AECFA2AF6D4A463A09 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1539DE434E087FE47C5 /* MainTabView.swift */; };
+		7DABF5FDDFD68B119D0C26AA /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C7BFB64F5940288E20A8D4 /* Medal.swift */; };
+		81C2955D4AF0CC7007CF6A8F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88DD31057D210B89158E8C1 /* ProfileViewModel.swift */; };
+		937BC1DE59DEAF37E479217C /* CardRarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A270074B87EC5AC87E7670D /* CardRarity.swift */; };
+		9D1FEE3661EB8152EA68D9EB /* PoseComparisonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E85703DFFF496A9A66479 /* PoseComparisonService.swift */; };
+		A46E14BC2A8328127B8E2E6F /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B54A3BB960305E710FFECA /* StatsView.swift */; };
+		A964BF846656CC93F767E429 /* PoseSilhouetteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393A8E84B51935D229BF0F0 /* PoseSilhouetteView.swift */; };
+		AA09E4DB1C530A50CBED8B36 /* PoseChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F21C9AC718C4308CC88ABE /* PoseChallengeViewModel.swift */; };
+		AA34D70F625CDAE984988A22 /* Color+JoJo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EF2B024BEF29CE2633D26 /* Color+JoJo.swift */; };
+		ACF668D03E812DA917416844 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */; };
+		B56657FAFE75C8856DC4B4A0 /* PoseResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66419206CD770437472626 /* PoseResultView.swift */; };
+		B58151E4C5CEAFD54FC729F3 /* XPProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D66E1FEB799FFDFBAD2140 /* XPProgressBar.swift */; };
+		C9313166CC36EB76FE2DE4DF /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */; };
+		D9008A33913790F661973361 /* RarityBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DAC452344205764301D199 /* RarityBorder.swift */; };
+		E3CC7733E028FFB601743753 /* CardSwipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E245067D6067999B2ED3B8 /* CardSwipeViewModel.swift */; };
+		E7FFB6F365330930328DDEDF /* JoJoStrikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */; };
+		EE6D67CD52BB8543A300BEB0 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2A6B7AD544A158646850A8 /* Achievement.swift */; };
+		FEAFAFD93FC538CAAC997387 /* CardDeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A78D0344F1A2CCB0BBFFF /* CardDeckService.swift */; };
+		AA01000000000001AAAAAAAA /* StandStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01000000000001BBBBBBBB /* StandStats.swift */; };
+		AA02000000000002AAAAAAAA /* CollectibleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB02000000000002BBBBBBBB /* CollectibleCard.swift */; };
+		AA03000000000003AAAAAAAA /* CardPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB03000000000003BBBBBBBB /* CardPack.swift */; };
+		AA04000000000004AAAAAAAA /* CollectibleCardDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04000000000004BBBBBBBB /* CollectibleCardDatabase.swift */; };
+		AA05000000000005AAAAAAAA /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB05000000000005BBBBBBBB /* CoinService.swift */; };
+		AA06000000000006AAAAAAAA /* CardPackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06000000000006BBBBBBBB /* CardPackService.swift */; };
+		AA07000000000007AAAAAAAA /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07000000000007BBBBBBBB /* TrainingViewModel.swift */; };
+		AA08000000000008AAAAAAAA /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08000000000008BBBBBBBB /* ShopViewModel.swift */; };
+		AA09000000000009AAAAAAAA /* CollectibleCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09000000000009BBBBBBBB /* CollectibleCollectionViewModel.swift */; };
+		AA10000000000010AAAAAAAA /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB10000000000010BBBBBBBB /* TrainingView.swift */; };
+		AA11000000000011AAAAAAAA /* TrainingPoseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11000000000011BBBBBBBB /* TrainingPoseRow.swift */; };
+		AA12000000000012AAAAAAAA /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12000000000012BBBBBBBB /* ShopView.swift */; };
+		AA13000000000013AAAAAAAA /* PackOpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB13000000000013BBBBBBBB /* PackOpeningView.swift */; };
+		AA14000000000014AAAAAAAA /* CardRevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14000000000014BBBBBBBB /* CardRevealView.swift */; };
+		AA15000000000015AAAAAAAA /* CollectibleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB15000000000015BBBBBBBB /* CollectibleCollectionView.swift */; };
+		AA16000000000016AAAAAAAA /* CollectibleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16000000000016BBBBBBBB /* CollectibleCardView.swift */; };
+		AA17000000000017AAAAAAAA /* CollectibleCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB17000000000017BBBBBBBB /* CollectibleCardDetailView.swift */; };
+		AA18000000000018AAAAAAAA /* StandStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18000000000018BBBBBBBB /* StandStatsView.swift */; };
+		DD30000000000030DDDDDDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07BEACB2F4F57440021E8DB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		005A78D0344F1A2CCB0BBFFF /* CardDeckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckService.swift; sourceTree = "<group>"; };
+		048E85703DFFF496A9A66479 /* PoseComparisonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseComparisonService.swift; sourceTree = "<group>"; };
+		088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0A270074B87EC5AC87E7670D /* CardRarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRarity.swift; sourceTree = "<group>"; };
+		0ABC793956EC173B3839D56C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		0AE6F20F6BFA91AE7EE813BC /* CardSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeView.swift; sourceTree = "<group>"; };
+		0C456AED47F99B66EB295C66 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		1618B1539DE434E087FE47C5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		18F21C9AC718C4308CC88ABE /* PoseChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseChallengeViewModel.swift; sourceTree = "<group>"; };
+		1B66419206CD770437472626 /* PoseResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseResultView.swift; sourceTree = "<group>"; };
+		21AF3C4B6636462EEBB08B75 /* PoseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDatabase.swift; sourceTree = "<group>"; };
+		23C7BFB64F5940288E20A8D4 /* Medal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
+		252EF2B024BEF29CE2633D26 /* Color+JoJo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+JoJo.swift"; sourceTree = "<group>"; };
+		28C87F521F5FB255ED4B43E6 /* ParticleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEffect.swift; sourceTree = "<group>"; };
+		38E245067D6067999B2ED3B8 /* CardSwipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeViewModel.swift; sourceTree = "<group>"; };
+		3E66628B812E72B79404F916 /* PoseOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseOverlayView.swift; sourceTree = "<group>"; };
+		40462C27585B9F6083B4AD1E /* PoseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCardView.swift; sourceTree = "<group>"; };
+		4393A8E84B51935D229BF0F0 /* PoseSilhouetteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseSilhouetteView.swift; sourceTree = "<group>"; };
+		49EE3D86D07BF756B3BDB0B0 /* MenacingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenacingText.swift; sourceTree = "<group>"; };
+		52CB174DE391B8C2C55AF6FC /* GamificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamificationService.swift; sourceTree = "<group>"; };
+		57D66E1FEB799FFDFBAD2140 /* XPProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPProgressBar.swift; sourceTree = "<group>"; };
+		626A892B93B2543EE15AA45A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		647346942735C3B4187FFFBB /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		7892AF79474C22B84A119CCD /* PoseDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetectionService.swift; sourceTree = "<group>"; };
+		84F42CDC91AB5A3C60F26CBB /* AchievementDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDatabase.swift; sourceTree = "<group>"; };
+		89A6C955D428D4EC8C5174FC /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		90DAC452344205764301D199 /* RarityBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarityBorder.swift; sourceTree = "<group>"; };
+		9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoJoStrikeApp.swift; sourceTree = "<group>"; };
+		9E2A6B7AD544A158646850A8 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		A07BEACB2F4F57440021E8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0C53E3A719A55BE8DFF014C /* SwipeGestureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureModifier.swift; sourceTree = "<group>"; };
+		B251C991DABF3E522A1480E1 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		B98FE04FCC1E577AB3B1BF1B /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		C88DD31057D210B89158E8C1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D3B54A3BB960305E710FFECA /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		DAD72BC28038D0BD5F92C4EC /* JoJo Strike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JoJo Strike.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B2F01BCC4289011DC4AD83 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		E2484938B8B7A92E23D4F5EC /* PoseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCategory.swift; sourceTree = "<group>"; };
+		E68A37B02E584D247E563DFC /* PoseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseCard.swift; sourceTree = "<group>"; };
+		EB27813122DF4D5DD45B7F07 /* PoseChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseChallengeView.swift; sourceTree = "<group>"; };
+		F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		F609DC673B718479772A6BF4 /* PoseAttempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseAttempt.swift; sourceTree = "<group>"; };
+		FB3D8C2F82E2C75465723C5D /* SwiftDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModels.swift; sourceTree = "<group>"; };
+		BB01000000000001BBBBBBBB /* StandStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandStats.swift; sourceTree = "<group>"; };
+		BB02000000000002BBBBBBBB /* CollectibleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCard.swift; sourceTree = "<group>"; };
+		BB03000000000003BBBBBBBB /* CardPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPack.swift; sourceTree = "<group>"; };
+		BB04000000000004BBBBBBBB /* CollectibleCardDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCardDatabase.swift; sourceTree = "<group>"; };
+		BB05000000000005BBBBBBBB /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
+		BB06000000000006BBBBBBBB /* CardPackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPackService.swift; sourceTree = "<group>"; };
+		BB07000000000007BBBBBBBB /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		BB08000000000008BBBBBBBB /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		BB09000000000009BBBBBBBB /* CollectibleCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCollectionViewModel.swift; sourceTree = "<group>"; };
+		BB10000000000010BBBBBBBB /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		BB11000000000011BBBBBBBB /* TrainingPoseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPoseRow.swift; sourceTree = "<group>"; };
+		BB12000000000012BBBBBBBB /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		BB13000000000013BBBBBBBB /* PackOpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackOpeningView.swift; sourceTree = "<group>"; };
+		BB14000000000014BBBBBBBB /* CardRevealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRevealView.swift; sourceTree = "<group>"; };
+		BB15000000000015BBBBBBBB /* CollectibleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCollectionView.swift; sourceTree = "<group>"; };
+		BB16000000000016BBBBBBBB /* CollectibleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCardView.swift; sourceTree = "<group>"; };
+		BB17000000000017BBBBBBBB /* CollectibleCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleCardDetailView.swift; sourceTree = "<group>"; };
+		BB18000000000018BBBBBBBB /* StandStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandStatsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		099E474D05588688CA03AC6D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				626A892B93B2543EE15AA45A /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1A91CB49A0531C7332F90D72 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				49EE3D86D07BF756B3BDB0B0 /* MenacingText.swift */,
+				28C87F521F5FB255ED4B43E6 /* ParticleEffect.swift */,
+				4393A8E84B51935D229BF0F0 /* PoseSilhouetteView.swift */,
+				90DAC452344205764301D199 /* RarityBorder.swift */,
+				57D66E1FEB799FFDFBAD2140 /* XPProgressBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		26788B0A526A4B55CD88CD57 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84F42CDC91AB5A3C60F26CBB /* AchievementDatabase.swift */,
+				BB04000000000004BBBBBBBB /* CollectibleCardDatabase.swift */,
+				21AF3C4B6636462EEBB08B75 /* PoseDatabase.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2B19C71BE424DA54117F40E2 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1539DE434E087FE47C5 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		31B77CC16B443F84B8D034D3 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D8C2F82E2C75465723C5D /* SwiftDataModels.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		3614EF3516BB38228C1A8456 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38E245067D6067999B2ED3B8 /* CardSwipeViewModel.swift */,
+				BB09000000000009BBBBBBBB /* CollectibleCollectionViewModel.swift */,
+				B251C991DABF3E522A1480E1 /* CollectionViewModel.swift */,
+				18F21C9AC718C4308CC88ABE /* PoseChallengeViewModel.swift */,
+				C88DD31057D210B89158E8C1 /* ProfileViewModel.swift */,
+				BB08000000000008BBBBBBBB /* ShopViewModel.swift */,
+				BB07000000000007BBBBBBBB /* TrainingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		44754D726320D26D453453A6 /* PoseData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PoseData;
+			sourceTree = "<group>";
+		};
+		54C2B607110F5D9163E164D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				005A78D0344F1A2CCB0BBFFF /* CardDeckService.swift */,
+				BB06000000000006BBBBBBBB /* CardPackService.swift */,
+				BB05000000000005BBBBBBBB /* CoinService.swift */,
+				52CB174DE391B8C2C55AF6FC /* GamificationService.swift */,
+				B98FE04FCC1E577AB3B1BF1B /* HapticsService.swift */,
+				048E85703DFFF496A9A66479 /* PoseComparisonService.swift */,
+				7892AF79474C22B84A119CCD /* PoseDetectionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7636DE1562EAE8F993326AFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				252EF2B024BEF29CE2633D26 /* Color+JoJo.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84AED71A6F75F91722EFC3C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E2A6B7AD544A158646850A8 /* Achievement.swift */,
+				BB03000000000003BBBBBBBB /* CardPack.swift */,
+				0A270074B87EC5AC87E7670D /* CardRarity.swift */,
+				BB02000000000002BBBBBBBB /* CollectibleCard.swift */,
+				23C7BFB64F5940288E20A8D4 /* Medal.swift */,
+				F609DC673B718479772A6BF4 /* PoseAttempt.swift */,
+				E68A37B02E584D247E563DFC /* PoseCard.swift */,
+				E2484938B8B7A92E23D4F5EC /* PoseCategory.swift */,
+				BB01000000000001BBBBBBBB /* StandStats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A07BEAC92F4F57440021E8DB /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A07BEACA2F4F57440021E8DB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A07BEACC2F4F57440021E8DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A07BEAC92F4F57440021E8DB /* Animations */,
+				A07BEACA2F4F57440021E8DB /* Sounds */,
+				A07BEACB2F4F57440021E8DB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A6C3D4E2F93DAF0A7D9E4665 /* CardSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				0AE6F20F6BFA91AE7EE813BC /* CardSwipeView.swift */,
+				40462C27585B9F6083B4AD1E /* PoseCardView.swift */,
+				B0C53E3A719A55BE8DFF014C /* SwipeGestureModifier.swift */,
+			);
+			path = CardSwipe;
+			sourceTree = "<group>";
+		};
+		C3752EBBD641C3BFC3CDDEBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD72BC28038D0BD5F92C4EC /* JoJo Strike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C78A0427110641BBBF281E14 /* PoseChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				647346942735C3B4187FFFBB /* CameraPreviewView.swift */,
+				EB27813122DF4D5DD45B7F07 /* PoseChallengeView.swift */,
+				3E66628B812E72B79404F916 /* PoseOverlayView.swift */,
+				1B66419206CD770437472626 /* PoseResultView.swift */,
+			);
+			path = PoseChallenge;
+			sourceTree = "<group>";
+		};
+		DCF0DCA947120A67C3DAFF21 = {
+			isa = PBXGroup;
+			children = (
+				EDA223B14441D403C42637CA /* JoJoStrike */,
+				C3752EBBD641C3BFC3CDDEBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF5A749553CCD47B905CCBFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC793956EC173B3839D56C /* AppState.swift */,
+				9AB0390BD52887C4B4341FA0 /* JoJoStrikeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E08E56CD38A8170F89291EC0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F103BA211B4407CDAC6CC9E9 /* AchievementsView.swift */,
+				088F72A6EAB43B1CAB360CE1 /* ProfileView.swift */,
+				D3B54A3BB960305E710FFECA /* StatsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CC20000000000020CCCCCCCC /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				BB10000000000010BBBBBBBB /* TrainingView.swift */,
+				BB11000000000011BBBBBBBB /* TrainingPoseRow.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		CC21000000000021CCCCCCCC /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				BB14000000000014BBBBBBBB /* CardRevealView.swift */,
+				BB13000000000013BBBBBBBB /* PackOpeningView.swift */,
+				BB12000000000012BBBBBBBB /* ShopView.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E41BD9766E6E65B39EA71D5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6C3D4E2F93DAF0A7D9E4665 /* CardSwipe */,
+				FF398732346A71BC2B82E237 /* Collection */,
+				1A91CB49A0531C7332F90D72 /* Components */,
+				2B19C71BE424DA54117F40E2 /* MainTab */,
+				099E474D05588688CA03AC6D /* Onboarding */,
+				C78A0427110641BBBF281E14 /* PoseChallenge */,
+				E08E56CD38A8170F89291EC0 /* Profile */,
+				CC21000000000021CCCCCCCC /* Shop */,
+				CC20000000000020CCCCCCCC /* Training */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDA223B14441D403C42637CA /* JoJoStrike */ = {
+			isa = PBXGroup;
+			children = (
+				A07BEACC2F4F57440021E8DB /* Resources */,
+				DF5A749553CCD47B905CCBFC /* App */,
+				26788B0A526A4B55CD88CD57 /* Data */,
+				7636DE1562EAE8F993326AFF /* Extensions */,
+				FC01CE2D71055CE48DE1391E /* ML */,
+				84AED71A6F75F91722EFC3C9 /* Models */,
+				31B77CC16B443F84B8D034D3 /* Persistence */,
+				54C2B607110F5D9163E164D1 /* Services */,
+				3614EF3516BB38228C1A8456 /* ViewModels */,
+				E41BD9766E6E65B39EA71D5D /* Views */,
+			);
+			path = JoJoStrike;
+			sourceTree = "<group>";
+		};
+		FC01CE2D71055CE48DE1391E /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				44754D726320D26D453453A6 /* PoseData */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		FF398732346A71BC2B82E237 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E1B2F01BCC4289011DC4AD83 /* CardDetailView.swift */,
+				BB15000000000015BBBBBBBB /* CollectibleCollectionView.swift */,
+				BB17000000000017BBBBBBBB /* CollectibleCardDetailView.swift */,
+				BB16000000000016BBBBBBBB /* CollectibleCardView.swift */,
+				89A6C955D428D4EC8C5174FC /* CollectionView.swift */,
+				0C456AED47F99B66EB295C66 /* FilterView.swift */,
+				BB18000000000018BBBBBBBB /* StandStatsView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		928C5C2E849036668AE3E14E /* JoJoStrike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F8D6016D7C1EC221472F15 /* Build configuration list for PBXNativeTarget "JoJoStrike" */;
+			buildPhases = (
+				0665839036A72FD6A5FF8F7E /* Sources */,
+				EE40000000000040EEEEEEEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoJoStrike;
+			packageProductDependencies = (
+			);
+			productName = JoJoStrike;
+			productReference = DAD72BC28038D0BD5F92C4EC /* JoJo Strike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		641425A6C6F299E9D5CDCDA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					928C5C2E849036668AE3E14E = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 704710F0C5C53431846ED4D9 /* Build configuration list for PBXProject "JoJoStrike" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DCF0DCA947120A67C3DAFF21;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				928C5C2E849036668AE3E14E /* JoJoStrike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE40000000000040EEEEEEEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD30000000000030DDDDDDDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0665839036A72FD6A5FF8F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6D67CD52BB8543A300BEB0 /* Achievement.swift in Sources */,
+				377E1597EE2A84A558D45196 /* AchievementDatabase.swift in Sources */,
+				C9313166CC36EB76FE2DE4DF /* AchievementsView.swift in Sources */,
+				3377A76A8E6432725D2AAEB4 /* AppState.swift in Sources */,
+				71CE4809FE097FDF574F63F6 /* CameraPreviewView.swift in Sources */,
+				FEAFAFD93FC538CAAC997387 /* CardDeckService.swift in Sources */,
+				512539DB47DA9E1B2F861B39 /* CardDetailView.swift in Sources */,
+				937BC1DE59DEAF37E479217C /* CardRarity.swift in Sources */,
+				23210CC9F4ACF4052DC47638 /* CardSwipeView.swift in Sources */,
+				E3CC7733E028FFB601743753 /* CardSwipeViewModel.swift in Sources */,
+				3D057E4F163441FE26B3B689 /* CollectionView.swift in Sources */,
+				63FECCD94977A1944957C37B /* CollectionViewModel.swift in Sources */,
+				AA34D70F625CDAE984988A22 /* Color+JoJo.swift in Sources */,
+				1E76C3FC91B66BE7BF9AC93E /* FilterView.swift in Sources */,
+				21289C5CDE7A2FE7285F0602 /* GamificationService.swift in Sources */,
+				35672542C5232896AAA07088 /* HapticsService.swift in Sources */,
+				E7FFB6F365330930328DDEDF /* JoJoStrikeApp.swift in Sources */,
+				74E654AECFA2AF6D4A463A09 /* MainTabView.swift in Sources */,
+				7DABF5FDDFD68B119D0C26AA /* Medal.swift in Sources */,
+				59B17471E26EEF27B427C97F /* MenacingText.swift in Sources */,
+				3466F30ACAA9CAD94BF42094 /* OnboardingView.swift in Sources */,
+				3897340CDB08EC9058FB2498 /* ParticleEffect.swift in Sources */,
+				5516815B18DC7791A31869EA /* PoseAttempt.swift in Sources */,
+				2603323943074E051E514992 /* PoseCard.swift in Sources */,
+				1027F403B061249114B185DB /* PoseCardView.swift in Sources */,
+				6ACDA44CE30D79556C206B59 /* PoseCategory.swift in Sources */,
+				618D3CFE00144165F9A69458 /* PoseChallengeView.swift in Sources */,
+				AA09E4DB1C530A50CBED8B36 /* PoseChallengeViewModel.swift in Sources */,
+				9D1FEE3661EB8152EA68D9EB /* PoseComparisonService.swift in Sources */,
+				049525CB7C1533C1F900CA10 /* PoseDatabase.swift in Sources */,
+				262AF56E582F22DB7B21F44D /* PoseDetectionService.swift in Sources */,
+				37529CFEF530E410519F179D /* PoseOverlayView.swift in Sources */,
+				B56657FAFE75C8856DC4B4A0 /* PoseResultView.swift in Sources */,
+				A964BF846656CC93F767E429 /* PoseSilhouetteView.swift in Sources */,
+				ACF668D03E812DA917416844 /* ProfileView.swift in Sources */,
+				81C2955D4AF0CC7007CF6A8F /* ProfileViewModel.swift in Sources */,
+				D9008A33913790F661973361 /* RarityBorder.swift in Sources */,
+				A46E14BC2A8328127B8E2E6F /* StatsView.swift in Sources */,
+				462E21F1C7E46DC41B3CB9B2 /* SwiftDataModels.swift in Sources */,
+				5CA12806F657BD5EF84029DF /* SwipeGestureModifier.swift in Sources */,
+				B58151E4C5CEAFD54FC729F3 /* XPProgressBar.swift in Sources */,
+				AA01000000000001AAAAAAAA /* StandStats.swift in Sources */,
+				AA02000000000002AAAAAAAA /* CollectibleCard.swift in Sources */,
+				AA03000000000003AAAAAAAA /* CardPack.swift in Sources */,
+				AA04000000000004AAAAAAAA /* CollectibleCardDatabase.swift in Sources */,
+				AA05000000000005AAAAAAAA /* CoinService.swift in Sources */,
+				AA06000000000006AAAAAAAA /* CardPackService.swift in Sources */,
+				AA07000000000007AAAAAAAA /* TrainingViewModel.swift in Sources */,
+				AA08000000000008AAAAAAAA /* ShopViewModel.swift in Sources */,
+				AA09000000000009AAAAAAAA /* CollectibleCollectionViewModel.swift in Sources */,
+				AA10000000000010AAAAAAAA /* TrainingView.swift in Sources */,
+				AA11000000000011AAAAAAAA /* TrainingPoseRow.swift in Sources */,
+				AA12000000000012AAAAAAAA /* ShopView.swift in Sources */,
+				AA13000000000013AAAAAAAA /* PackOpeningView.swift in Sources */,
+				AA14000000000014AAAAAAAA /* CardRevealView.swift in Sources */,
+				AA15000000000015AAAAAAAA /* CollectibleCollectionView.swift in Sources */,
+				AA16000000000016AAAAAAAA /* CollectibleCardView.swift in Sources */,
+				AA17000000000017AAAAAAAA /* CollectibleCardDetailView.swift in Sources */,
+				AA18000000000018AAAAAAAA /* StandStatsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5057E2C74DF3A2B674CB6595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "JoJo Strike needs camera access to detect your poses and compare them with iconic JoJo poses.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jojostrike.app;
+				PRODUCT_NAME = "JoJo Strike";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		727D04934DBA902FF775C5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A2A472D4E889767A4AF0E8CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		AB6E0641522745E626F0C5E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "JoJo Strike needs camera access to detect your poses and compare them with iconic JoJo poses.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jojostrike.app;
+				PRODUCT_NAME = "JoJo Strike";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		704710F0C5C53431846ED4D9 /* Build configuration list for PBXProject "JoJoStrike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727D04934DBA902FF775C5F1 /* Debug */,
+				A2A472D4E889767A4AF0E8CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		72F8D6016D7C1EC221472F15 /* Build configuration list for PBXNativeTarget "JoJoStrike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5057E2C74DF3A2B674CB6595 /* Debug */,
+				AB6E0641522745E626F0C5E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 641425A6C6F299E9D5CDCDA8 /* Project object */;
+}

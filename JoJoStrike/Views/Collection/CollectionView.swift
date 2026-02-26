@@ -140,13 +140,10 @@ struct CollectionView: View {
                     .frame(height: 120)
 
                 if unlocked {
-                    PoseSilhouetteView(
-                        poseID: pose.id,
-                        color: pose.rarity.color,
-                        lineWidth: 2.5,
-                        showGlow: false
-                    )
-                    .padding(8)
+                    Image(pose.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(8)
                 } else {
                     Image(systemName: "questionmark")
                         .font(.system(size: 30))

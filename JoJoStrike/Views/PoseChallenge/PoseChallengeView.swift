@@ -1,8 +1,11 @@
 import SwiftUI
+import SwiftData
 
 struct PoseChallengeView: View {
     let poseID: String
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
+    @Query private var profiles: [UserProfile]
     @State private var viewModel: PoseChallengeViewModel?
 
     var body: some View {
@@ -39,8 +42,10 @@ struct PoseChallengeView: View {
                 score: score,
                 medal: medal,
                 xpEarned: vm.xpEarned,
+                coinsEarned: vm.coinsEarned,
                 onDismiss: { dismiss() }
             )
+            .onAppear { awardRewards(vm: vm, score: score, medal: medal) }
         }
     }
 
@@ -179,6 +184,44 @@ struct PoseChallengeView: View {
         if score >= 75 { return .jojoSilver }
         if score >= 60 { return Color(red: 0.80, green: 0.50, blue: 0.20) }
         return .gray
+    }
+
+    private func awardRewards(vm: PoseChallengeViewModel, score: Int, medal: Medal) {
+        guard let profile = profiles.first else { return }
+
+        let isDaily = vm.pose.id == GamificationService.dailyChallengePose().id
+        let isFirst = !profile.attempts.contains { $0.poseID == vm.pose.id && $0.score >= Medal.bronze.minimumScore }
+
+        vm.calculateCoins(isDailyChallenge: isDaily, isFirstCompletion: isFirst)
+        CoinService.awardCoins(vm.coinsEarned, to: profile)
+
+        // Save attempt
+        let attempt = PoseAttemptRecord(poseID: vm.pose.id, score: score, medal: medal.rawValue)
+        profile.attempts.append(attempt)
+
+        // Unlock pose
+        if medal != .none && !profile.unlockedPoseIDs.contains(vm.pose.id) {
+            profile.unlockedPoseIDs.append(vm.pose.id)
+        }
+
+        // XP
+        let xp = GamificationService.calculateXP(
+            pose: vm.pose, medal: medal,
+            isFirstCompletion: isFirst, isDailyChallenge: isDaily
+        )
+        profile.totalXP += xp
+        profile.level = GamificationService.levelFromTotalXP(profile.totalXP)
+
+        // Streak
+        GamificationService.updateStreak(profile: profile)
+
+        // Achievements
+        let newAchievements = GamificationService.checkAchievements(profile: profile)
+        for ach in newAchievements {
+            profile.unlockedPoseIDs.append("ach_\(ach.id)")
+        }
+
+        try? modelContext.save()
     }
 }
 

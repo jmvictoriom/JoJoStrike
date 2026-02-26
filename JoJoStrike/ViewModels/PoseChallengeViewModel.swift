@@ -93,10 +93,22 @@ final class PoseChallengeViewModel {
         HapticsService.poseMatch(score: bestScore)
     }
 
+    private(set) var coinsEarned: Int = 0
+
     var xpEarned: Int {
         let medal = Medal.from(score: bestScore)
         let base = medal.baseXPMultiplier * Double(pose.difficulty)
         return Int(base * pose.rarity.xpMultiplier)
+    }
+
+    func calculateCoins(isDailyChallenge: Bool, isFirstCompletion: Bool) {
+        let medal = Medal.from(score: bestScore)
+        coinsEarned = CoinService.coinsEarned(
+            medal: medal,
+            difficulty: pose.difficulty,
+            isDailyChallenge: isDailyChallenge,
+            isFirstCompletion: isFirstCompletion
+        )
     }
 
     var duration: TimeInterval {

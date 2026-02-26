@@ -14,7 +14,6 @@ struct ProfileView: View {
                     VStack(spacing: 24) {
                         avatarSection
                         xpSection
-                        dailyChallengeCard
                         quickStats
                         navigationLinks
                     }
@@ -50,6 +49,19 @@ struct ProfileView: View {
                 .font(.subheadline)
                 .foregroundStyle(.jojoGold)
                 .tracking(1)
+
+            // Coin balance
+            HStack(spacing: 4) {
+                Image(systemName: "dollarsign.circle.fill")
+                    .foregroundStyle(.jojoGold)
+                Text("\(vm.profile?.coins ?? 0) monedas")
+                    .font(.subheadline.bold())
+                    .foregroundStyle(.jojoGold)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 6)
+            .background(.jojoGold.opacity(0.15))
+            .clipShape(Capsule())
         }
     }
 
@@ -72,68 +84,23 @@ struct ProfileView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
-    // MARK: - Daily Challenge
-
-    private var dailyChallengeCard: some View {
-        VStack(spacing: 10) {
-            HStack {
-                Image(systemName: "calendar.badge.clock")
-                    .foregroundStyle(.jojoOrange)
-                Text("Desafío Diario")
-                    .font(.headline.bold())
-                    .foregroundStyle(.white)
-                Spacer()
-                Text("x2 XP")
-                    .font(.caption.bold())
-                    .foregroundStyle(.jojoOrange)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .background(.jojoOrange.opacity(0.2))
-                    .clipShape(Capsule())
-            }
-
-            HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(vm.dailyChallenge.name)
-                        .font(.subheadline.bold())
-                        .foregroundStyle(.white)
-                    Text(vm.dailyChallenge.partDisplay)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-                Spacer()
-                Text(vm.dailyChallenge.difficultyDisplay)
-                    .font(.caption)
-            }
-
-            if vm.currentStreak > 0 {
-                HStack {
-                    Image(systemName: "flame.fill")
-                        .foregroundStyle(.jojoOrange)
-                    Text("\(vm.currentStreak) días de racha!")
-                        .font(.caption.bold())
-                        .foregroundStyle(.jojoOrange)
-                    Spacer()
-                }
-            }
-        }
-        .padding()
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .overlay {
-            RoundedRectangle(cornerRadius: 12)
-                .strokeBorder(.jojoOrange.opacity(0.3), lineWidth: 1)
-        }
-    }
-
     // MARK: - Quick Stats
 
     private var quickStats: some View {
-        HStack(spacing: 12) {
-            quickStat(value: "\(vm.totalPosesCompleted)", label: "Poses", icon: "figure.stand", color: .jojoPurple)
-            quickStat(value: "\(vm.totalAttempts)", label: "Intentos", icon: "arrow.counterclockwise", color: .jojoBlue)
-            quickStat(value: "\(vm.bestScore)%", label: "Mejor", icon: "star.fill", color: .jojoGold)
-            quickStat(value: "\(vm.achievementProgress.unlocked)", label: "Logros", icon: "trophy.fill", color: .jojoOrange)
+        let ownedCount = vm.profile?.ownedCards.count ?? 0
+        let totalCards = CollectibleCardDatabase.allCards.count
+
+        return VStack(spacing: 12) {
+            HStack(spacing: 12) {
+                quickStat(value: "\(vm.totalPosesCompleted)", label: "Poses", icon: "figure.stand", color: .jojoPurple)
+                quickStat(value: "\(vm.totalAttempts)", label: "Intentos", icon: "arrow.counterclockwise", color: .jojoBlue)
+                quickStat(value: "\(vm.bestScore)%", label: "Mejor", icon: "star.fill", color: .jojoGold)
+            }
+            HStack(spacing: 12) {
+                quickStat(value: "\(ownedCount)/\(totalCards)", label: "Cartas", icon: "rectangle.stack.fill", color: .jojoRed)
+                quickStat(value: "\(vm.achievementProgress.unlocked)", label: "Logros", icon: "trophy.fill", color: .jojoOrange)
+                quickStat(value: "\(vm.currentStreak)", label: "Racha", icon: "flame.fill", color: .jojoOrange)
+            }
         }
     }
 

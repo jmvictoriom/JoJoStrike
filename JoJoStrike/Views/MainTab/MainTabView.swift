@@ -7,12 +7,16 @@ struct MainTabView: View {
         @Bindable var state = appState
 
         TabView(selection: $state.selectedTab) {
-            Tab("Descubrir", systemImage: "rectangle.stack.fill", value: .discover) {
-                CardSwipeView()
+            Tab("Entrenar", systemImage: "figure.martial.arts", value: .training) {
+                TrainingView()
             }
 
-            Tab("Colección", systemImage: "square.grid.2x2.fill", value: .collection) {
-                CollectionView()
+            Tab("Tienda", systemImage: "bag.fill", value: .shop) {
+                ShopView()
+            }
+
+            Tab("Colección", systemImage: "rectangle.stack.fill", value: .collection) {
+                CollectibleCollectionView()
             }
 
             Tab("Perfil", systemImage: "person.fill", value: .profile) {

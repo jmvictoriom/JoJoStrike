@@ -5,11 +5,13 @@ struct PoseResultView: View {
     let score: Int
     let medal: Medal
     let xpEarned: Int
+    let coinsEarned: Int
     let onDismiss: () -> Void
 
     @State private var showScore = false
     @State private var showMedal = false
     @State private var showXP = false
+    @State private var showCoins = false
 
     var body: some View {
         ZStack {
@@ -57,6 +59,18 @@ struct PoseResultView: View {
                     .transition(.move(edge: .bottom).combined(with: .opacity))
                 }
 
+                // Coins earned
+                if showCoins && coinsEarned > 0 {
+                    HStack(spacing: 4) {
+                        Image(systemName: "dollarsign.circle.fill")
+                            .foregroundStyle(.jojoGold)
+                        Text("+\(coinsEarned) monedas")
+                            .font(.title3.bold())
+                            .foregroundStyle(.jojoGold)
+                    }
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+
                 Spacer()
 
                 // Actions
@@ -89,6 +103,9 @@ struct PoseResultView: View {
         withAnimation(.spring(response: 0.4).delay(1.2)) {
             showXP = true
         }
+        withAnimation(.spring(response: 0.4).delay(1.5)) {
+            showCoins = true
+        }
         if medal >= .gold {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                 HapticsService.achievement()
@@ -103,6 +120,7 @@ struct PoseResultView: View {
         score: 87,
         medal: .gold,
         xpEarned: 420,
+        coinsEarned: 40,
         onDismiss: {}
     )
 }

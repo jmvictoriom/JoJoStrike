@@ -58,14 +58,11 @@ struct PoseCardView: View {
                 endPoint: .bottom
             )
 
-            // Pose silhouette figure
-            PoseSilhouetteView(
-                poseID: card.id,
-                color: card.rarity.color,
-                lineWidth: 4,
-                showGlow: card.rarity.hasGlowBorder
-            )
-            .padding(20)
+            // Character image
+            Image(card.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(12)
 
             // Category badge
             VStack {
