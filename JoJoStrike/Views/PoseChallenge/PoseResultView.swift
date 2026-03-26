@@ -106,9 +106,23 @@ struct PoseResultView: View {
         withAnimation(.spring(response: 0.4).delay(1.5)) {
             showCoins = true
         }
-        if medal >= .gold {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+
+        // Audio feedback
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            AudioService.shared.play("result_score")
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            AudioService.shared.play("result_medal")
+            if medal >= .gold {
                 HapticsService.achievement()
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+            AudioService.shared.play("xp_gain")
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            if coinsEarned > 0 {
+                AudioService.shared.play("coin_earn")
             }
         }
     }

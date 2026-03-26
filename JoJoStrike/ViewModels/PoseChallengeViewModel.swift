@@ -16,6 +16,7 @@ final class PoseChallengeViewModel {
 
     private var timer: Timer?
     private var startTime: Date?
+    private var crossedThresholds: Set<Int> = []
 
     enum ChallengePhase: Equatable {
         case countdown
@@ -48,7 +49,10 @@ final class PoseChallengeViewModel {
                 HapticsService.tap()
                 if self.countdown <= 0 {
                     self.timer?.invalidate()
+                    AudioService.shared.play("countdown_go")
                     self.beginPosing()
+                } else {
+                    AudioService.shared.play("countdown_tick")
                 }
             }
         }
@@ -59,6 +63,8 @@ final class PoseChallengeViewModel {
         timeRemaining = 15.0
         startTime = Date()
         bestScore = 0
+        crossedThresholds = []
+        AudioService.shared.play("pose_start")
 
         timer = Timer.scheduledTimer(withTimeInterval: 1.0 / 15.0, repeats: true) { [weak self] _ in
             Task { @MainActor in
@@ -76,6 +82,21 @@ final class PoseChallengeViewModel {
 
                 if score > self.bestScore {
                     self.bestScore = score
+
+                    // Play chime when crossing medal thresholds
+                    let thresholds: [(Int, String)] = [
+                        (95, "score_platinum"),
+                        (85, "score_gold"),
+                        (75, "score_silver"),
+                        (60, "score_bronze"),
+                    ]
+                    for (threshold, sound) in thresholds {
+                        if score >= threshold && !self.crossedThresholds.contains(threshold) {
+                            self.crossedThresholds.insert(threshold)
+                            AudioService.shared.play(sound)
+                            break
+                        }
+                    }
                 }
 
                 if self.timeRemaining <= 0 {
@@ -91,6 +112,10 @@ final class PoseChallengeViewModel {
         let medal = Medal.from(score: bestScore)
         phase = .finished(score: bestScore, medal: medal)
         HapticsService.poseMatch(score: bestScore)
+
+        if medal >= .gold {
+            AudioService.shared.playStandCry(for: pose.id)
+        }
     }
 
     private(set) var coinsEarned: Int = 0

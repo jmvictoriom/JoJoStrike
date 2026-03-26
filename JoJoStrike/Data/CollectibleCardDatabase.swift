@@ -407,7 +407,7 @@ struct CollectibleCardDatabase {
             part: 5,
             partName: "Golden Wind",
             rarity: .epic,
-            imageName: "pose_torture-dance",
+            imageName: "pose_fugo-virus",
             standStats: StandStats(
                 destructivePower: .a, speed: .b, range: .c,
                 durability: .e, precision: .e, developmentPotential: .c
@@ -424,7 +424,7 @@ struct CollectibleCardDatabase {
             part: 5,
             partName: "Golden Wind",
             rarity: .rare,
-            imageName: "pose_bucciarati-zipper",
+            imageName: "pose_abbacchio-replay",
             standStats: StandStats(
                 destructivePower: .c, speed: .c, range: .a,
                 durability: .c, precision: .c, developmentPotential: .c
@@ -511,7 +511,7 @@ struct CollectibleCardDatabase {
             part: 6,
             partName: "Stone Ocean",
             rarity: .bizarre,
-            imageName: "pose_jolyne-ensemble",
+            imageName: "pose_pucci-heaven",
             standStats: StandStats(
                 destructivePower: .none, speed: .d, range: .none,
                 durability: .none, precision: .none, developmentPotential: .a
@@ -547,7 +547,7 @@ struct CollectibleCardDatabase {
             part: 7,
             partName: "Steel Ball Run",
             rarity: .epic,
-            imageName: "pose_johnny-gyro-point",
+            imageName: "pose_gyro-steel",
             standStats: StandStats(
                 destructivePower: .a, speed: .b, range: .c,
                 durability: .c, precision: .c, developmentPotential: .c
@@ -564,7 +564,7 @@ struct CollectibleCardDatabase {
             part: 7,
             partName: "Steel Ball Run",
             rarity: .bizarre,
-            imageName: "pose_johnny-gyro-point",
+            imageName: "pose_valentine-flag",
             standStats: StandStats(
                 destructivePower: .a, speed: .a, range: .c,
                 durability: .a, precision: .a, developmentPotential: .a
@@ -581,7 +581,7 @@ struct CollectibleCardDatabase {
             part: 7,
             partName: "Steel Ball Run",
             rarity: .epic,
-            imageName: "pose_dio-wryyy",
+            imageName: "pose_diego-dino",
             standStats: StandStats(
                 destructivePower: .b, speed: .b, range: .c,
                 durability: .b, precision: .c, developmentPotential: .c

@@ -102,10 +102,14 @@ struct PackOpeningView: View {
                             isNew: newCardIDs.contains(card.id),
                             refund: duplicateRefunds[card.id]
                         ) {
+                            AudioService.shared.play("card_flip")
                             withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
                                 revealedIndices.insert(index)
                             }
                             HapticsService.cardReveal(rarity: card.rarity.rawValue)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                AudioService.shared.playCardReveal(rarity: card.rarity)
+                            }
                         }
                     }
                 }
@@ -202,6 +206,7 @@ struct PackOpeningView: View {
     // MARK: - Animations
 
     private func animatePackAppear() {
+        AudioService.shared.play("pack_whoosh")
         withAnimation(.spring(response: 0.6, dampingFraction: 0.6)) {
             packScale = 1.0
             packOpacity = 1.0
@@ -210,10 +215,12 @@ struct PackOpeningView: View {
 
     private func openPack() {
         HapticsService.achievement()
+        AudioService.shared.playMenacing()
         withAnimation(.easeIn(duration: 0.3)) {
             phase = .opening
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            AudioService.shared.stopMenacing()
             withAnimation(.spring(response: 0.5)) {
                 phase = .revealing
             }
