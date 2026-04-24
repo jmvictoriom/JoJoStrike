@@ -11,7 +11,7 @@ struct ShopView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.jojoDarkBg.ignoresSafeArea()
+                JJAppBackground()
 
                 ScrollView {
                     VStack(spacing: 20) {
@@ -68,9 +68,7 @@ struct ShopView: View {
 
             Spacer()
         }
-        .padding()
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .jjSurfaceCard(accent: .jojoGold)
     }
 
     // MARK: - Pack Card
@@ -140,9 +138,7 @@ struct ShopView: View {
                 .disabled(!canBuy || vm.isPurchasing)
             }
         }
-        .padding()
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .jjSurfaceCard(accent: .jojoGold)
         .overlay {
             RoundedRectangle(cornerRadius: 12)
                 .strokeBorder(packColor(pack).opacity(0.3), lineWidth: 1)
@@ -162,9 +158,7 @@ struct ShopView: View {
             infoRow(icon: "calendar.badge.clock", text: "Desafío diario da x2 monedas", color: .jojoOrange)
             infoRow(icon: "star.fill", text: "Primera vez completando = +50 bonus", color: .jojoBlue)
         }
-        .padding()
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .jjSurfaceCard(accent: .jojoGold)
     }
 
     private func infoRow(icon: String, text: String, color: Color) -> some View {

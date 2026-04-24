@@ -12,7 +12,7 @@ struct TrainingView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.jojoDarkBg.ignoresSafeArea()
+                JJAppBackground()
 
                 ScrollView {
                     VStack(spacing: 16) {
@@ -113,13 +113,7 @@ struct TrainingView: View {
                         .foregroundStyle(.jojoOrange)
                 }
             }
-            .padding()
-            .background(.jojoCardBg)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay {
-                RoundedRectangle(cornerRadius: 12)
-                    .strokeBorder(.jojoOrange.opacity(0.3), lineWidth: 1)
-            }
+            .jjSurfaceCard(accent: .jojoOrange)
         }
         .buttonStyle(.plain)
         .padding(.horizontal)
