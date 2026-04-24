@@ -24,6 +24,9 @@ struct MainTabView: View {
             }
         }
         .tint(.jojoGold)
+        .toolbarBackground(.visible, for: .tabBar)
+        .toolbarBackground(Color.jojoCardBg.opacity(0.94), for: .tabBar)
+        .toolbarColorScheme(.dark, for: .tabBar)
     }
 }
 

@@ -12,7 +12,7 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.jojoDarkBg.ignoresSafeArea()
+                JJAppBackground()
 
                 ScrollView {
                     VStack(spacing: 24) {
@@ -83,9 +83,7 @@ struct ProfileView: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
-        .padding()
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .jjSurfaceCard(accent: .jojoGold)
     }
 
     // MARK: - Quick Stats
@@ -122,8 +120,7 @@ struct ProfileView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .jjSurfaceCard(cornerRadius: 10, accent: color, elevation: 4)
     }
 
     // MARK: - Navigation
@@ -183,9 +180,7 @@ struct ProfileView: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
-        .padding()
-        .background(.jojoCardBg)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .jjSurfaceCard(cornerRadius: 10, accent: .jojoGold, elevation: 4)
     }
 }
 
